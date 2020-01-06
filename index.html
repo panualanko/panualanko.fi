@@ -1,17 +1,210 @@
 <html>
 	<head>
         <title>Panu Alanko</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Assistant:600,700|Open+Sans&display=swap" rel="stylesheet">
 		<style>
             body {
                 font-family: 'Open Sans', sans-serif;
                 color: #131313;
-                padding: 20px;
+                padding: 0;
+                margin: 0;
+                line-height: 1.75em;
+            }
+            a {
+                cursor: pointer;
+                color: #131313;
+                text-decoration: none;
+                transition: color 0.2s ease;
+            }
+            a:hover {
+                color: rgb(170, 170, 170);
+            }
+            h1, h2, h3 {
+                font-family: 'Assistant', sans-serif;
+                font-weight: 700;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 56px;
+                line-height: 1.2em;
+            }
+            .content {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            .header {
+                margin-top: 20px;
+            }
+            .header-top {
+                padding: 20px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+            .header-links {
+                display: flex;
+                align-items: center;
+            }
+            .header-link:not(:last-child) {
+                margin-right: 25px;
+            }
+            .header-bio {
+                margin: 105px 0 150px;
+            }
+            .header-photo img {
+                max-width: 100%;
+                margin: 20px 0;
+                box-shadow: 0 20px 50px 0px rgba(0,0,0,0.05);
+            }
+            .bio {
+                display: flex;
+                margin: 100px 0;
+            }
+            .bio-title {
+                flex: 50%;
+                font-family: 'Assistant', sans-serif;
+                font-weight: bold;
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            .bio-content {
+                flex: 50%;
+            }
+            .bio-content div {
+                margin-bottom: 50px;
+            }
+            .section {
+                background: rgb(250, 249, 248);
+                padding: 50px 0;
+                box-shadow: 0 0 50px 0px rgba(0,0,0,0.01), inset 0 0 20px 0px rgba(0,0,0,0.01);
+            }
+            .competence, .case {
+                flex: 33%;
+                margin: 20px 0 50px;
+                color: #646464;
+            }
+            .competence:not(:last-child), .case:not(:last-child) {
+                margin-right: 40px;
+            }
+            .competence span, .case span {
+                display: block;
+                font-family: 'Assistant', sans-serif;
+                font-weight: 600;
+                font-size: 22px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                color: #131313;
+            }
+            .competences, .cases {
+                display: flex;
+            }
+            .competences-title, .cases-title {
+                font-family: 'Assistant', sans-serif;
+                font-weight: bold;
+                font-size: 28px;
+                margin: 40px 0;
+            }
+            .footer {
+                text-align: center;
+                background: #f5f5f4;
+                color: #646464;
+            }
+            .footer-content {
+                margin: 0 auto;
+                padding: 20px 0 120px;
+                max-width: 500px;
+            }
+            .footer-connect {
+                font-family: 'Assistant', sans-serif;
+                font-weight: bold;
+                font-size: 20px;
+                color: #131313;
+            }
+            .footer-contact {
+                margin: 20px;
+            }
+            .footer-email {
+                margin-top: 60px;
+            }
+            .footer-signature {
+                padding: 100px 80px 60px;
+                max-width: 80%;
+                opacity: 0.55;
+            }
+            @media (max-width: 720px) {
+                h2 {
+                    font-size: 42px;
+                }
+                .header-bio {
+                    margin: 50px 0 25px;
+                }
+                .header-top, .bio, .competences, .cases {
+                    display: block;
+                }
             }
         </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta property="og:title" content="Panu Alanko">
+        <meta property="og:description" content="Marketing communications that matters.">
+        <meta property="og:url" content="http://www.panualanko.fi">
+        <meta property="og:image" content="http://panualanko.fi/photo.jpg" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@panualanko">
 	</head>
 	<body>
-        Panu Alanko
+        <div class="content">
+            <div class="header">
+                <div class="header-top">
+                    <h1>Panu Alanko</h1>
+                    <div class="header-links">
+                        <div class="header-link"><a href="mailto:contact@panualanko.fi">Email</a></div>
+                        <div class="header-link"><a href="https://www.linkedin.com/in/panu-alanko-9a241749/">LinkedIn</a></div>
+                        <div class="header-link"><a href="https://www.twitter.com/panualanko">Twitter</a></div>
+                    </div>
+                </div>
+                <div class="header-photo"><img src="photo.jpg" alt="Panu Alanko"/></div>
+                <div class="header-bio"><h2>Marketing communications that matter.</h2></div>
+            </div>
+            <div class="body">
+                <div class="bio">
+                    <div class="bio-title">Who am I?</div>
+                    <div class="bio-content">
+                        <div>I am a marketing communications professional with a sharp pen and a curious mind. Having an agency background in commercial PR, I fluently translate broader business objectives into feasible and measurable communication activities on both strategic and tactical level. I enjoy working with other people and firmly believe in the power of co-creation and multidisciplinary talent - this is essential for marketing which is ultimately the intersection between the organisation and the customer.</div>
+                        <div>I am a genuine and approachable guy, with a strong sense of justice and a deep commitment to whatever I am working with - whether it is of my professional or personal interest, I am in it for the long term. What drives me is a desire to learn more and better understand the world we’re living in - I always listen, before I talk.</div>
+                        <div>Along with my passion for writing and reading, I enjoy the many products of pop culture, including movies, video games, music, podcasts and more. At home, you will find me hosting a dinner to my friends or playing Hans Zimmer’s epic piano pieces. My favourite outdoor activities include water sports of all sorts, so feel free to hop onboard if you fancy a boat ride!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <div class="competences-title">Profile</div>
+                <div class="competences">
+                    <div class="competence"><span>PR specialist</span>Communication strategy and execution. Media and influencer relations management.</div>
+                    <div class="competence"><span>Marketing generalist</span>Holistic thinker, customer-driven creative and the integrator of marketing resources.</div>
+                    <div class="competence"><span>Writer</span>Press releases, articles, media pitches, presentations, social media posts, scripts and more. Finnish and English. You name it.</div>
+                </div>
+                
+                <div class="cases-title">Experience</div>
+                <div class="cases">
+                    <div class="case"><span>Tech</span>Having worked with the leading video gaming brands, I am familiar with the trends in digital entertainment. Besides the execution of launch PR for several AAA titles, digital services and top-selling hardware, I am also an experienced communicator in the smart device and telecommunications domain. Along with consumer technology brands, I have also worked together with pioneering Nordic startups and the biggest software company in the world.</div>
+                    <div class="case"><span>Service industry</span>The rise of the service economy has provided fascinating business cases to work on over the past decade. Extending from public service communications to marketing exotic travel destinations and executing launch PR for one of the largest fast-food chains in the world, customer-oriented communications have never been as important as it is today.</div>
+                    <div class="case"><span>B2B</span>Based on my marketing consultancy experience, I am familiar with working with business decision-makers and partners alike. Having worked with both short-term and long-term client projects, I am experienced in account management, sales and running projects independently. </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-signature"><img  src="signature.png" alt=""/></div>
+                <div class="footer-connect">Did I catch your attention?</div>
+                <div class="footer-contact">I’m happy to share more information in person, so feel free to say hi at anytime and contact me via email or social channels.</div>
+                <div class="footer-contact footer-email"><a href="mailto:contact@panualanko.fi">Email</a></div>
+                <div class="footer-contact"><a href="https://www.linkedin.com/in/panu-alanko-9a241749/">LinkedIn</a></div>
+                <div class="footer-contact"><a href="https://www.twitter.com/panualanko">Twitter</a></div>
+            </div>
+        </div>
 	</body>
 </html>
